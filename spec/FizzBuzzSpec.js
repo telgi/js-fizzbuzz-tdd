@@ -16,4 +16,8 @@ describe("FizzBuzz", function() {
   it("should return 'buzz' for multiples of 5", function() {
     expect(fizzBuzz.play(5)).toEqual('Buzz');
   });
+
+  it("should return 'fizzbuzz' for multiples of 3 and 5", function() {
+    expect(fizzBuzz.play(15)).toEqual('FizzBuzz');
+  });
 });
