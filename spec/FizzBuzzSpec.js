@@ -5,11 +5,15 @@ describe("FizzBuzz", function() {
     fizzBuzz = new FizzBuzz();
   });
 
-  it("should return a number", function() {
-    expect(fizzBuzz.play(1)).toEqual(1);
-  })
+  it("should return a number that isn't divisible by 3 or 5", function() {
+    expect(fizzBuzz.play(13)).toEqual(13);
+  });
 
   it("should return 'fizz' for multiples of 3", function() {
     expect(fizzBuzz.play(3)).toEqual('Fizz');
-  })
+  });
+
+  it("should return 'buzz' for multiples of 5", function() {
+    expect(fizzBuzz.play(5)).toEqual('Buzz');
+  });
 });
